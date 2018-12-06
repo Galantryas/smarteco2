@@ -20,4 +20,33 @@ Route::get('/load', function () {
 Route::get('/login', function () {
     return view('login');
 });
-
+Route::get('/perda', function () {
+    return view('perda');
+});
+Route::get('/datawilayah', function () {
+    return view('datawilayah');
+});
+Route::get('/foto', function () {
+    return view('foto');
+});
+Route::get('/kehijauanwilayah', function () {
+    return view('kehijauanwilayah');
+});
+Route::get('/sensusprofesi', function () {
+    return view('sensusprofesi');
+});
+Route::get('/edit_sensusprofesi', function () {
+    return view('edit_sensusprofesi');
+});
+Route::get('/edit_kehijauanwilayah', function () {
+    return view('edit_kehijauanwilayah');
+});
+Route::get('/edit_datawilayah', function () {
+    return view('edit_datawilayah');
+});
+Route::get('/edit_foto', function () {
+    return view('edit_foto');
+});
+Route::get('/tambah_foto', function () {
+    return view('tambah_foto');
+});

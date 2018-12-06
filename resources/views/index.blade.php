@@ -509,8 +509,8 @@
     <div class="triangle"></div>
     <div class="container">
         <div class="title">
-            <h1>Who We Are?</h1>
-            <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+            <h1>Jadwal</h1>
+            <p>2018</p>
         </div>
         <div class="row-fluid team">
             <div class="span4" id="first-person">
@@ -797,22 +797,21 @@
         <div class="sub-section">
             <div class="title clearfix">
                 <div class="pull-left">
-                    <h3>Newsletter</h3>
+                    <h3>Beri Saran</h3>
                 </div>
             </div>
         </div>
         <div id="success-subscribe" class="alert alert-success invisible">
-            <strong>Well done!</strong>You successfully subscribet to our newsletter.</div>
+            <strong>erhasil!</strong>Masukkan kamu telah kami terima</div>
         <div class="row-fluid">
             <div class="span5">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Beri masukkan pada kotak berikut untuk membantu perkembangan website ini.</p>
             </div>
             <div class="span7">
                 <form class="inline-form">
-                    <input type="email" name="email" id="nlmail" class="span8" placeholder="Enter your email" required />
-                    <button id="subscribe" class="button button-sp">Subscribe</button>
+                    <input type="text" name="text" id="nlmail" class="span8" placeholder="Masukkan saran" />
+                    <button id="subscribe" class="button button-sp">Kirim</button>
                 </form>
-                <div id="err-subscribe" class="error centered">Please provide valid email address.</div>
             </div>
         </div>
     </div>
@@ -824,53 +823,16 @@
         <div class="container">
             <div class="title">
                 <h1>Kontak Kami</h1>
-                <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+                <p>Hubungi kami pada kontak - kontak berikut.</p>
             </div>
         </div>
-        <div class="map-wrapper">
-            <div class="map-canvas" id="map-canvas">Loading map...</div>
-            <div class="container">
-                <div class="row-fluid">
-                    <div class="span5 contact-form centered">
-                        <h3>Say Hello</h3>
-                        <div id="successSend" class="alert alert-success invisible">
-                            <strong>Well done!</strong>Your message has been sent.</div>
-                        <div id="errorSend" class="alert alert-error invisible">There was an error.</div>
-                        <form id="contact-form" action="php/mail.php">
-                            <div class="control-group">
-                                <div class="controls">
-                                    <input class="span12" type="text" id="name" name="name" placeholder="* Your name..." />
-                                    <div class="error left-align" id="err-name">Please enter name.</div>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="controls">
-                                    <input class="span12" type="email" name="email" id="email" placeholder="* Your email..." />
-                                    <div class="error left-align" id="err-email">Please enter valid email adress.</div>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="controls">
-                                    <textarea class="span12" name="comment" id="comment" placeholder="* Comments..."></textarea>
-                                    <div class="error left-align" id="err-comment">Please enter your comment.</div>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="controls">
-                                    <button id="send-mail" class="message-btn">Send message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="container">
             <div class="span9 center contact-info">
                 <p>123 Fifth Avenue, 12th,Belgrade,SRB 11000</p>
-                <p class="info-mail">ourstudio@somemail.com</p>
-                <p>+11 234 567 890</p>
-                <p>+11 286 543 850</p>
+                <p class="info-mail">smarteco@gmail.com</p>
+                <p>+62 83863545467</p>
+                <p>+62 81347591227</p>
                 <div class="title">
                     <h3>We Are Social</h3>
                 </div>
@@ -889,17 +851,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <span class="icon-linkedin-circled"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon-pinterest-circled"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <span class="icon-dribbble-circled"></span>
+                            <span class="icon-instagram-circled"></span>
                         </a>
                     </li>
                     <li>
@@ -915,7 +867,7 @@
 <!-- Contact section edn -->
 <!-- Footer section start -->
 <div class="footer">
-    <pShared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
+    <pShared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">SmartEco @2018</a>
     </p>
 </div>
 <!-- Footer section end -->
