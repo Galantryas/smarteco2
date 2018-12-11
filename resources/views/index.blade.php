@@ -130,9 +130,17 @@
         <ul class="nav nav-pills">
             <li class="filter" data-filter="all">
                 <select>
+                    <option value="Kalimantan Utara"> Kalimantan Utara</option>
+                    <option value="Kalimantan Selatan"> Kalimantan Selatan</option>
+                    <option value="Kalimantan Tengah"> Kalimantan Tengah</option>
+                    <option value="Kalimantan Timur"> Kalimantan Timur</option>
+                    <option value="Kalimantan Barat"> Kalimantan Barat</option>
                     <option value="Jawa Tengah"> Jawa Tengah</option>
-                    <option value="Jawa Tengah"> Jawa Timur</option>
-                    <option value="Jawa Tengah"> Jawa Barat</option>
+                    <option value="Jawa Timur"> Jawa Timur</option>
+                    <option value="Jawa Barat"> Jawa Barat</option>
+                    <option value="Sumatera Utara"> Sumatera Utara</option>
+                    <option value="Sumatera Timur"> Sumatera Timur</option>
+                    <option value="Sumatera Barat"> Sumatera Barat</option>
 
                 </select>
             </li>
@@ -646,45 +654,50 @@
         <div class="triangle"></div>
         <div class="container">
             <div class="title">
-                <h1>What Client Say?</h1>
-                <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+                <h1>Perbandingan Wilayah</h1>
+                {{--<p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>--}}
             </div>
             <div class="row">
-                <div class="span4">
-                    <div class="testimonial">
-                        <p>"I've worked too hard and too long to let anything stand in the way of my goals. I will not let my teammates down and I will not let myself down."</p>
-                        <div class="whopic">
-                            <div class="arrow"></div>
-                            <img src="images/Client1.png" class="centered" alt="client 1">
-                            <strong>John Doe
-                                <small>Client</small>
-                            </strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="testimonial">
-                        <p>"In motivating people, you've got to engage their minds and their hearts. I motivate people, I hope, by example - and perhaps by excitement, by having productive ideas to make others feel involved."</p>
-                        <div class="whopic">
-                            <div class="arrow"></div>
-                            <img src="images/Client2.png" class="centered" alt="client 2">
-                            <strong>John Doe
-                                <small>Client</small>
-                            </strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="testimonial">
-                        <p>"Determine never to be idle. No person will have occasion to complain of the want of time who never loses any. It is wonderful how much may be done if we are always doing."</p>
-                        <div class="whopic">
-                            <div class="arrow"></div>
-                            <img src="images/Client3.png" class="centered" alt="client 3">
-                            <strong>John Doe
-                                <small>Client</small>
-                            </strong>
-                        </div>
-                    </div>
+                <form action="#" method="get">
+                    <p>Wilayah 1 : </p><input type="text" name="wlayah1" style="width: 100%;"><br>
+                    <p>Wilayah 2 : </p><input type="text" name="wlayah2" style="width: 100%;"><br>
+                    <input type="submit" name="submit" value="Tampilkan">
+                </form>
+                {{--<div class="span4">--}}
+                    {{--<div class="testimonial">--}}
+                        {{--<p>"I've worked too hard and too long to let anything stand in the way of my goals. I will not let my teammates down and I will not let myself down."</p>--}}
+                        {{--<div class="whopic">--}}
+                            {{--<div class="arrow"></div>--}}
+                            {{--<img src="images/Client1.png" class="centered" alt="client 1">--}}
+                            {{--<strong>John Doe--}}
+                                {{--<small>Client</small>--}}
+                            {{--</strong>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="span4">--}}
+                    {{--<div class="testimonial">--}}
+                        {{--<p>"In motivating people, you've got to engage their minds and their hearts. I motivate people, I hope, by example - and perhaps by excitement, by having productive ideas to make others feel involved."</p>--}}
+                        {{--<div class="whopic">--}}
+                            {{--<div class="arrow"></div>--}}
+                            {{--<img src="images/Client2.png" class="centered" alt="client 2">--}}
+                            {{--<strong>John Doe--}}
+                                {{--<small>Client</small>--}}
+                            {{--</strong>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="span4">--}}
+                    {{--<div class="testimonial">--}}
+                        {{--<p>"Determine never to be idle. No person will have occasion to complain of the want of time who never loses any. It is wonderful how much may be done if we are always doing."</p>--}}
+                        {{--<div class="whopic">--}}
+                            {{--<div class="arrow"></div>--}}
+                            {{--<img src="images/Client3.png" class="centered" alt="client 3">--}}
+                            {{--<strong>John Doe--}}
+                                {{--<small>Client</small>--}}
+                            {{--</strong>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
                 </div>
             </div>
             <p class="testimonial-text">
@@ -829,10 +842,11 @@
 
         <div class="container">
             <div class="span9 center contact-info">
-                <p>123 Fifth Avenue, 12th,Belgrade,SRB 11000</p>
+                <p>Sekolah Vokasi, Universitas Gadjah Mada</p>
                 <p class="info-mail">smarteco@gmail.com</p>
-                <p>+62 83863545467</p>
-                <p>+62 81347591227</p>
+                <p>Admin 1 : +62 81327484381</p>
+                <p>Admin 2 : +62 83863545467</p>
+                <p>Admin 3 : +62 81347591227</p>
                 <div class="title">
                     <h3>We Are Social</h3>
                 </div>

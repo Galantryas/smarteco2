@@ -32,9 +32,7 @@ Route::get('/foto', function () {
 Route::get('/kehijauanwilayah', function () {
     return view('kehijauanwilayah');
 });
-Route::get('/sensusprofesi', function () {
-    return view('sensusprofesi');
-});
+Route::resource('sensusprofesi','SensusProfesiController');
 Route::get('/edit_sensusprofesi', function () {
     return view('edit_sensusprofesi');
 });
