@@ -22,7 +22,18 @@
                 </tr>
                 </thead>
                 <tbody>
-
+                    @foreach($data as $d)
+                    <tr>
+                        <td>{{ $d->hsa }}</td>
+                        <td>{{ $d->hpyddk }}</td>
+                        <td>{{ $d->hutan_lindung }}</td>
+                        <td>{{ $d->kwa }}</td>
+                        <td>{{ $d->hptt }}</td>
+                        <td>{{ $d->hpt }}</td>
+                        <td>{{ $d->kpa }}</td>
+                        <td>{{ $d->tahun }}</td>
+                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

@@ -15,7 +15,7 @@ class GaleriController extends Controller
     public function index()
     {
         $data = ModelGaleri::all();
-        return view('galeri',compact('data'));
+        return view('foto',compact('data'));
     }
 
     /**
@@ -25,7 +25,7 @@ class GaleriController extends Controller
      */
     public function create()
     {
-        //
+        return view('tambah_foto');
     }
 
     /**
@@ -36,8 +36,17 @@ class GaleriController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $data = new ModelGaleri();
+        $data->tanggalambil = $request->tanggalambil;
+        $data->kegiatan = $request->kegiatan;
+        $data->deskripsi = $request->deskripsi;
+        $foto = $request->file('foto');
+        $ext = $foto->getClientOriginalExtension();
+        $newName = rand(100000,1001238912).".".$ext;
+        $foto->move('upload/foto',$newName);
+        $data->foto=$newName;
+        $data->save();
+        return redirect()->route('foto.index')->with('alert-success','Berhasil Menambahkan Data!');    }
 
     /**
      * Display the specified resource.

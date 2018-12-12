@@ -5,25 +5,21 @@
         <!-- Add Your Content Inside -->
         <div class="content">
             <!-- Remove This Before You Start -->
-            <h1>Tambah Foto</h1>
+            <h1>Tambah DataWilayah</h1>
             <hr>
-            <form action="{{ route('foto.store') }}" method="post">
+            <form action="{{ route('datawilayah.store') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <label for="foto">Foto:</label>
-                    <input type="file" class="form-control" id="foto" name="foto">
+                    <label for="luas_daerah">Luas Daerah(km2):</label>
+                    <input type="number" class="form-control" id="luas_daerah" name="luas_daerah">
                 </div>
                 <div class="form-group">
-                    <label for="kegiatan">Kegiatan:</label>
-                    <input type="text" class="form-control" id="kegiatan" name="kegiatan">
+                    <label for="jumlah_penduduk">Jumlah Penduduk:</label>
+                    <input type="number" class="form-control" id="jumlah_penduduk" name="jumlah_penduduk">
                 </div>
                 <div class="form-group">
-                    <label for="deskripsi">Deskripsi:</label>
-                    <input type="text" class="form-control" id="deskripsi" name="deskripsi">
-                </div>
-                <div class="form-group">
-                    <label for="tanggalambil">Tanggal Ambil:</label>
-                    <input type="date" class="form-control" id="tanggalambil" name="tanggalambil">
+                    <label for="tahun">Tahun:</label>
+                    <input type="number" class="form-control" id="tahun" name="tahun">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-md btn-primary">Submit</button>

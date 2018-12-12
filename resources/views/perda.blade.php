@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="{{url('assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="{{url('assets/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
-  <!-- bootstrap wysihtml5 - text editor -->
+  <!-- bootstrap wysihtml5 - text tambahor -->
   <link rel="stylesheet" href="{{url('assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -134,7 +134,7 @@
               </a>
               <ul class="treeview-menu">
                 <li class="active"><a href="/datawilayah"><i class="fa fa-circle"></i> List </a></li>
-                <li class="active"><a href="/edit_datawilayah"><i class="fa fa-circle"></i> Edit </a></li>
+                <li class="active"><a href="/tambah_datawilayah"><i class="fa fa-circle"></i> tambah </a></li>
               </ul>
           </a>
         </li>
@@ -147,7 +147,7 @@
               </a>
               <ul class="treeview-menu">
                 <li class="active"><a href="/sensusprofesi"><i class="fa fa-circle"></i> List </a></li>
-                <li class="active"><a href="/edit_sensusprofesi"><i class="fa fa-circle"></i> Edit </a></li>
+                <li class="active"><a href="/tambah_sensusprofesi"><i class="fa fa-circle"></i> tambah </a></li>
               </ul>
           </a>
         </li>
@@ -160,7 +160,7 @@
               </a>
               <ul class="treeview-menu">
                 <li class="active"><a href="/kehijauanwilayah"><i class="fa fa-circle"></i> List </a></li>
-                <li class="active"><a href="/edit_kehijauanwilayah"><i class="fa fa-circle"></i> Edit </a></li>
+                <li class="active"><a href="/tambah_kehijauanwilayah"><i class="fa fa-circle"></i> tambah </a></li>
               </ul>
           </a>
         </li >

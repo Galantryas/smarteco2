@@ -15,7 +15,7 @@ class DataTabelController extends Controller
     public function index()
     {
         $data = ModelDataTabel::all();
-        return view('datatabel',compact('data'));
+        return view('datawilayah',compact('data'));
     }
 
     /**
@@ -25,7 +25,7 @@ class DataTabelController extends Controller
      */
     public function create()
     {
-        //
+        return view('tambah_datawilayah');    
     }
 
     /**
@@ -36,7 +36,12 @@ class DataTabelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = new ModelDataTabel();
+        $data->luas_daerah = $request->luas_daerah;
+        $data->jumlah_penduduk = $request->jumlah_penduduk;
+        $data->tahun = $request->tahun;
+        $data->save();
+        return redirect()->route('datawilayah.index')->with('alert-success','Berhasil Menambahkan Data!');
     }
 
     /**

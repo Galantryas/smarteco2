@@ -15,7 +15,7 @@ class PemerintahDaerahController extends Controller
     public function index()
     {
         $data = ModelPemerintahDaerah::all();
-        return view('pemerintahdaerah',compact('data'));
+        return view('perda',compact('data'));
     }
 
     /**
@@ -47,7 +47,7 @@ class PemerintahDaerahController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -56,9 +56,10 @@ class PemerintahDaerahController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id_pd)
     {
-        //
+        // $data = ModelPemerintahDaerah::findOrFail($id_pd);
+        // return view('perda',compact('data'));
     }
 
     /**

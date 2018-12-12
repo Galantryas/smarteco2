@@ -29,14 +29,7 @@
                         <td>{{ $d->pengangguran }}</td>
                         <td>{{ $d->pegawai_negeri_sipil }}</td>
                         <td>{{ $d->tahun }}</td>
-                        <td>
-                            <form action="{{ route('sensusprofesi.destroy', $d->id_sp) }}" method="post">
-                                {{ csrf_field() }}
-                                {{ method_field('DELETE') }}
-                                <a href="{{ route('sensusprofesi.edit',$d->id_sp) }}" class=" btn btn-sm btn-primary">Edit</a>
-                                <button class="btn btn-sm btn-danger" type="submit" onclick="return confirm('Yakin ingin menghapus data?')">Delete</button>
-                            </form>
-                        </td>
+                        
                     </tr>
                     @endforeach
                 </tbody>

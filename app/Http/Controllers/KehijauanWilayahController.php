@@ -25,8 +25,7 @@ class KehijauanWilayahController extends Controller
      */
     public function create()
     {
-        //
-    }
+        return view('tambah_kehijauanwilayah');    }
 
     /**
      * Store a newly created resource in storage.
@@ -36,7 +35,17 @@ class KehijauanWilayahController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = new ModelKehijauanWilayah();
+        $data->hsa = $request->hsa;
+        $data->hpyddk = $request->hpyddk;
+        $data->hutan_lindung = $request->hutan_lindung;
+        $data->kwa = $request->kwa;
+        $data->hptt = $request->hptt;
+        $data->hpt = $request->hpt;
+        $data->kpa = $request->kpa;
+        $data->tahun = $request->tahun;
+        $data->save();
+        return redirect()->route('kehijauanwilayah.index')->with('alert-success','Berhasil Menambahkan Data!');
     }
 
     /**

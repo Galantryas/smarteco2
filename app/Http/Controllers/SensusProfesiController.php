@@ -25,7 +25,7 @@ class SensusProfesiController extends Controller
      */
     public function create()
     {
-        //
+        return view('tambah_sensusperofesi');
     }
 
     /**
@@ -36,7 +36,14 @@ class SensusProfesiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = new ModelSensusProfesi();
+        $data->buruh = $request->buruh;
+        $data->wirausaha = $request->wirausaha;
+        $data->pengangguran = $request->pengagguran;
+        $data->pegawai_negeri_sipil = $request->pegawai_negeri_sipil;
+        $data->tahun = $request->tahun;
+        $data->save();
+        return redirect()->route('sensusprofesi.index')->with('alert-success','Berhasil Menambahkan Data!');
     }
 
     /**

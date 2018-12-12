@@ -5,9 +5,10 @@
         <!-- Add Your Content Inside -->
         <div class="content">
             <!-- Remove This Before You Start -->
-            <h1>Edit Kehijauan Wilayah</h1>
+            <h1>Tambah Kehijauan Wilayah</h1>
             <hr>
-            <form>
+            <form action="{{ route('kehijauanwilayah.store') }}" method="post">
+                {{ csrf_field() }}
                 <div class="form-group">
                     <label for="hsa">hsa(m2):</label>
                     <input type="number" class="form-control" id="hsa" name="hsa">
@@ -17,8 +18,8 @@
                     <input type="number" class="form-control" id="hpyddk" name="hpyddk" >
                 </div>
                 <div class="form-group">
-                    <label for="hutanlindung">hutan lindung(m2):</label>
-                    <input type="number" class="form-control" id="hutanlindung" name="hutanlindung" >
+                    <label for="hutan_lindung">hutan lindung(m2):</label>
+                    <input type="number" class="form-control" id="hutan_lindung" name="hutan_lindung" >
                 </div>
                 <div class="form-group">
                     <label for="kwa">kwa(m2):</label>
@@ -38,7 +39,7 @@
                 </div>
                 <div class="form-group">
                     <label for="tahun">Tahun:</label>
-                    <input type="number" class="form-control" id="tahun" name="tahun" >
+                    <input type="date" class="form-control" id="tahun" name="tahun" >
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-md btn-primary">Submit</button>

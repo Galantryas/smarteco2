@@ -16,11 +16,20 @@
                     <th>Kegiatan</th>
                     <th>Deskripsi</th>
                     <th>Tanggal Ambil</th>
-                    <th>Aksi</th>
+                    
                 </tr>
                 </thead>
                 <tbody>
-
+                    @php $no = 1; @endphp
+                    @foreach($data as $d)
+                    <tr>
+                        <td>{{ $no++ }}</td>
+                        <td>{{ $d->foto }}</td>
+                        <td>{{ $d->kegiatan }}</td>
+                        <td>{{ $d->deskripsi }}</td>
+                        <td>{{ $d->tanggalambil }}</td>                        
+                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

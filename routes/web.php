@@ -33,18 +33,26 @@ Route::get('/kehijauanwilayah', function () {
     return view('kehijauanwilayah');
 });
 Route::resource('sensusprofesi','SensusProfesiController');
-Route::get('/edit_sensusprofesi', function () {
-    return view('edit_sensusprofesi');
+Route::get('/tambah_sensusprofesi', function () {
+    return view('tambah_sensusprofesi');
 });
-Route::get('/edit_kehijauanwilayah', function () {
-    return view('edit_kehijauanwilayah');
+Route::get('/tambah_kehijauanwilayah', function () {
+    return view('tambah_kehijauanwilayah');
 });
-Route::get('/edit_datawilayah', function () {
-    return view('edit_datawilayah');
-});
-Route::get('/edit_foto', function () {
-    return view('edit_foto');
+Route::get('/tambah_datawilayah', function () {
+    return view('tambah_datawilayah');
 });
 Route::get('/tambah_foto', function () {
     return view('tambah_foto');
 });
+Route::get('/tambah_foto', function () {
+    return view('tambah_foto');
+});
+
+Route::resource('admin','AdminController');
+Route::resource('datawilayah','DataTabelController');
+Route::resource('foto','GaleriController');
+Route::resource('jadwal','jadwalController');
+Route::resource('kehijauanwilayah','KehijauanWilayahController');
+Route::resource('perdah','PemerintahDaerahController');
+Route::resource('sensusprofesi','SensusProfesiController');
