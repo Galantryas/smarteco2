@@ -27,7 +27,7 @@
                 </div>
                 <div class="form-group">
                     <label for="tahun">Tahun:</label>
-                    <input type="date" class="form-control" id="tahun" name="tahun" >
+                    <input type="number" class="form-control" id="tahun" name="tahun" >
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-md btn-primary">Submit</button>

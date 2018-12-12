@@ -24,7 +24,7 @@
                     @foreach($data as $d)
                     <tr>
                         <td>{{ $no++ }}</td>
-                        <td>{{ $d->foto }}</td>
+                        <td><img src="{{ url('upload/foto/'.$d->foto) }}" style="width: 150px; height: 150px;"></td>
                         <td>{{ $d->kegiatan }}</td>
                         <td>{{ $d->deskripsi }}</td>
                         <td>{{ $d->tanggalambil }}</td>                        

@@ -17,9 +17,6 @@ Route::get('/', function () {
 Route::get('/load', function () {
     return view('loading');
 });
-Route::get('/login', function () {
-    return view('login');
-});
 Route::get('/perda', function () {
     return view('perda');
 });
@@ -54,5 +51,9 @@ Route::resource('datawilayah','DataTabelController');
 Route::resource('foto','GaleriController');
 Route::resource('jadwal','jadwalController');
 Route::resource('kehijauanwilayah','KehijauanWilayahController');
-Route::resource('perdah','PemerintahDaerahController');
+Route::resource('perda','PemerintahDaerahController');
 Route::resource('sensusprofesi','SensusProfesiController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

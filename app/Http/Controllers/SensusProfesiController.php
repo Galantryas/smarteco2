@@ -39,7 +39,7 @@ class SensusProfesiController extends Controller
         $data = new ModelSensusProfesi();
         $data->buruh = $request->buruh;
         $data->wirausaha = $request->wirausaha;
-        $data->pengangguran = $request->pengagguran;
+        $data->pengangguran = $request->pengangguran;
         $data->pegawai_negeri_sipil = $request->pegawai_negeri_sipil;
         $data->tahun = $request->tahun;
         $data->save();

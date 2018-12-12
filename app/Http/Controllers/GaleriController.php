@@ -37,16 +37,17 @@ class GaleriController extends Controller
     public function store(Request $request)
     {
         $data = new ModelGaleri();
-        $data->tanggalambil = $request->tanggalambil;
         $data->kegiatan = $request->kegiatan;
         $data->deskripsi = $request->deskripsi;
+        $data->tanggalambil = $request->tanggalambil;
         $foto = $request->file('foto');
         $ext = $foto->getClientOriginalExtension();
         $newName = rand(100000,1001238912).".".$ext;
         $foto->move('upload/foto',$newName);
         $data->foto=$newName;
         $data->save();
-        return redirect()->route('foto.index')->with('alert-success','Berhasil Menambahkan Data!');    }
+        return redirect()->route('foto.index')->with('alert-success','Berhasil Menambahkan Data!');
+   }
 
     /**
      * Display the specified resource.

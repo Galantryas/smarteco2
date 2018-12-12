@@ -7,7 +7,7 @@
             <!-- Remove This Before You Start -->
             <h1>Tambah Foto</h1>
             <hr>
-            <form action="{{ route('foto.store') }}" method="post">
+            <form action="{{ route('foto.store') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="foto">Foto:</label>
